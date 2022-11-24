@@ -1,0 +1,19 @@
+How to fix Github Error: Permission denied (publickey):-
+
+Run the below-given commands
+git config --global --unset core.excludesfile
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global user.name "your Github username"
+
+git config --global user.email "your Github mail id"
+
+ssh-keygen
+
+it will ask you to enter the file name and password.
+
+If you don't enter any file name and press enter. It will create a file as .ssh. Edit the file id_rsa under.ssh, copy the ssh key.
+Go to your GitHub settings and paste the copied ssh key and save the settings. 
+
